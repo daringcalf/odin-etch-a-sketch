@@ -48,7 +48,6 @@ const createGrid = (n) => {
     const randomRgba = `rgba(${random8BitColor()},${random8BitColor()},${random8BitColor()},0)`;
     cell.style.backgroundColor = randomRgba;
     cell.addEventListener("mouseover", (e) => {
-      const cell = e.target;
       const rgba = cell.style.backgroundColor;
       const lastCommaIndex = rgba.lastIndexOf(",");
       const currentOpacity = parseFloat(
